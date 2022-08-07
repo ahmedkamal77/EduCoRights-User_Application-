@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="If the user does not have an account, he has to register and return to sign in again.">
+    <Position X="14.688" Y="1.886" Height="0.681" Width="1.871" />
+  </Comment>
+  <Comment CommentText="If the user has an account, he will directly go through the welcome page.">
+    <Position X="5.528" Y="1.807" Height="0.693" Width="1.871" />
+  </Comment>
+  <Comment CommentText="To ensure that the user has the same device, from which he signs up, during sign-in process.">
+    <Position X="13.233" Y="0.5" Height="0.291" Width="5.503" />
+  </Comment>
+  <Comment CommentText="To get some information about the user's device while signing up.">
+    <Position X="16.399" Y="3.49" Height="0.291" Width="3.95" />
+  </Comment>
+  <Comment CommentText="To store the user's data.">
+    <Position X="12.503" Y="3.449" Height="0.305" Width="1.7" />
+  </Comment>
+  <Comment CommentText="To check the user's data.">
+    <Position X="10.105" Y="2.307" Height="0.291" Width="1.7" />
+  </Comment>
+  <Class Name="aes256withsalt.cryptor" Collapsed="true">
+    <Position X="4.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cryptor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginPage.DatabaseConnection" Collapsed="true">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIECiBAAGAAAAQgAAAAkAAAwAQIAAIIAAAQAAGAgAA=</HashCode>
+      <FileName>DatabaseConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginPage.dec_file" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAQAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>dec_file.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginPage.EducoRights" Collapsed="true">
+    <Position X="19" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>K8DBAYeJAqClmlTAlByoAgQyRDEAQItQAukBx4ESCAQ=</HashCode>
+      <FileName>EducoRights.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginPage.GetDeviceInfo" Collapsed="true">
+    <Position X="19.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAABAAgAAAAAAAiICEAAABIA=</HashCode>
+      <FileName>GetDeviceInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginPage.Homeposter" Collapsed="true">
+    <Position X="17.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAACAAAIACAAAAEAgYSIAAACAAAAAAAGBQAAAAAChgA=</HashCode>
+      <FileName>Homeposter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginPage.Light_Dark" Collapsed="true">
+    <Position X="20" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgIAgAAAAAAACACAgAAIAAAAEAAAgAAAAAAgAACCIAA=</HashCode>
+      <FileName>Light_Dark.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginPage.Poster" Collapsed="true">
+    <Position X="20.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCCgAgQICE0AAEEIICCAIICAAABAABASAUBgIAAohA=</HashCode>
+      <FileName>Poster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginPage.Program" Collapsed="true">
+    <Position X="19" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginPage.Sign_In" Collapsed="true">
+    <Position X="10.25" Y="1.25" Width="1.5" />
+    <AssociationLine Name="Sign_Up" Type="LoginPage.Sign_Up" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.75" Y="1.625" />
+        <Point X="15.5" Y="1.625" />
+        <Point X="15.5" Y="3.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Welcome" Type="LoginPage.RadForm1" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="1.625" />
+        <Point X="6.438" Y="1.625" />
+        <Point X="6.438" Y="3.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="GetDeviceInfo" Type="LoginPage.GetDeviceInfo" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="1.25" />
+        <Point X="11" Y="0.639" />
+        <Point X="20.5" Y="0.639" />
+        <Point X="20.5" Y="1.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CCAQghQQACQgCBFgAWKAIAgCAgKBADIAgkAgAwDQQgQ=</HashCode>
+      <FileName>Sign_In.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Sign_Up" />
+      <Property Name="Welcome" />
+      <Property Name="GetDeviceInfo" />
+      <Property Name="DatabaseConnection" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LoginPage.Sign_Up" Collapsed="true">
+    <Position X="14.75" Y="3.25" Width="1.5" />
+    <AssociationLine Name="Sign_In" Type="LoginPage.Sign_In" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.688" Y="3.25" />
+        <Point X="15.688" Y="1.406" />
+        <Point X="11.75" Y="1.406" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="GetDeviceInfo" Type="LoginPage.GetDeviceInfo" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.25" Y="3.625" />
+        <Point X="20.5" Y="3.625" />
+        <Point X="20.5" Y="1.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ACEQMhAACKQMgRUpCCCYYAgKGCwAAKJIAglJBShQAyg=</HashCode>
+      <FileName>Sign_Up.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Sign_In" />
+      <Property Name="GetDeviceInfo" />
+      <Property Name="DatabaseConnection" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LoginPage.RadForm1" Collapsed="true">
+    <Position X="5.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAYAACACABAAAACAAAACAAAAAAAAAAAAAQDAAAA=</HashCode>
+      <FileName>Welcome.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tribleedes.TDES" Collapsed="true">
+    <Position X="6.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TDES.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
